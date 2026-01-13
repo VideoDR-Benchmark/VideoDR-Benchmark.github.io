@@ -6,10 +6,10 @@
         <div class="header-content fade-in-up">
           <h1 class="page-title">
             <i class="fas fa-trophy"></i>
-            <span class="gradient-text">LeaderBoard</span>
+            <span class="gradient-text">{{ config.pageMetadata.title }}</span>
           </h1>
           <p class="page-description">
-            Performance rankings of AI agents on GitTaskBench evaluation tasks
+            {{ config.pageMetadata.description }}
           </p>
         </div>
       </div>

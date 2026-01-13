@@ -1,110 +1,68 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "title": "GitTaskBench Model Performance",
+  "title": "VideoDR Model Performance",
   "description": "Submit your model performance data to the leaderboard",
   "properties": {
     "Framework": {
       "type": "string",
       "title": "Framework",
-      "description": "AI framework name (e.g., Aider, SWE-Agent, OpenHands)"
+      "description": "AI framework name (e.g., Workflow, Agentic)"
     },
     "LLM": {
       "type": "string",
       "title": "LLM",
-      "description": "Large language model name (e.g., GPT-4o, Claude 3.5)"
+      "description": "Large language model name (e.g., GPT-4o, Gemini-3-pro)"
     },
-    "ECR": {
+    "ACC": {
       "type": "number",
-      "title": "ECR (%)",
-      "description": "Execution Completion Rate (0-100)",
+      "title": "ACC (%)",
+      "description": "Accuracy (0-100)",
       "minimum": 0,
       "maximum": 100
     },
-    "TPR": {
+    "ThinkCount": {
       "type": "number",
-      "title": "TPR (%)",
-      "description": "Task Pass Rate (0-100)",
-      "minimum": 0,
-      "maximum": 100
-    },
-    "InputTokens": {
-      "type": "number",
-      "title": "Input Tokens (k)",
-      "description": "Average input tokens in thousands",
+      "title": "Think Calls",
+      "description": "Average number of think calls",
       "minimum": 0
     },
-    "OutputTokens": {
+    "SearchCount": {
       "type": "number",
-      "title": "Output Tokens",
-      "description": "Average output tokens",
+      "title": "Search Calls",
+      "description": "Average number of search calls",
       "minimum": 0
     },
-    "Cost": {
-      "type": [
-        "number",
-        "string"
-      ],
-      "title": "Cost ($)",
-      "description": "Total cost in USD, use '-' for free models"
-    },
-    "CommitDate": {
-      "type": "string",
-      "title": "Date",
-      "description": "Evaluation date (YYYY-MM-DD)",
-      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    "TotalTime": {
+      "type": "number",
+      "title": "Total Time (s)",
+      "description": "Average total execution time in seconds",
+      "minimum": 0
     },
     "SiteUrl": {
       "type": "string",
       "title": "Website",
       "description": "Model website URL"
-    },
-    "Type": {
-      "type": "string",
-      "title": "Type",
-      "description": "Model type",
-      "enum": [
-        "open-source",
-        "proprietary"
-      ]
-    },
-    "frameLogo": {
-      "type": "string",
-      "title": "Framework Logo URL",
-      "description": "URL to framework logo image (optional)"
-    },
-    "llmLogo": {
-      "type": "string",
-      "title": "LLM Logo URL",
-      "description": "URL to LLM logo image (optional)"
     }
   },
   "required": [
     "Framework",
     "LLM",
-    "ECR",
-    "TPR",
-    "InputTokens",
-    "OutputTokens",
-    "Cost",
-    "CommitDate",
-    "SiteUrl",
-    "Type"
+    "ACC",
+    "ThinkCount",
+    "SearchCount",
+    "TotalTime",
+    "SiteUrl"
   ],
   "examples": [
     {
-      "Framework": "Aider",
-      "LLM": "GPT-4o",
-      "ECR": 5.56,
-      "TPR": 1.85,
-      "InputTokens": 10.67,
-      "OutputTokens": 492.67,
-      "Cost": 0.0316,
-      "CommitDate": "2025-08-09",
-      "SiteUrl": "https://openai.com/research/gpt-4",
-      "Type": "open-source",
-      "frameLogo": "https://gittaskbench.github.io/img/openhands.3a38b1f2.png",
-      "llmLogo": "https://gittaskbench.github.io/img/claude.b3f090ee.svg"
+      "Framework": "Workflow",
+      "LLM": "Qwen3-Omni-30B-A3B",
+      "ACC": 37.0,
+      "ThinkCount": 1.82,
+      "SearchCount": 0.95,
+      "TotalTime": 222.86,
+      "SiteUrl": "https://qwen.ai/blog"
     }
   ]
 }
