@@ -1,0 +1,130 @@
+{
+  "pageMetadata": {
+    "title": "GitTaskBench - Real-World Code Agent Benchmark",
+    "description": "A comprehensive benchmark for systematically evaluating LLM agents' ability to leverage open-source repositories to solve complex, real-world tasks."
+  },
+
+  "heroSection": {
+    "title": {
+      "main": "GitTaskBench",
+      "subtitle": "Real-World Code Agent Benchmark"
+    },
+    "description": "A comprehensive benchmark for systematically evaluating LLM agents' ability to leverage open-source repositories to solve complex, real-world tasks.",
+    "buttons": [
+      {
+        "text": "View Report",
+        "icon": "fas fa-file-alt",
+        "type": "external",
+        "url": "https://arxiv.org/abs/2508.18993",
+        "variant": "primary"
+      },
+      {
+        "text": "View LeaderBoard",
+        "icon": "fas fa-trophy",
+        "type": "internal",
+        "url": "/leaderboard",
+        "variant": "secondary"
+      },
+      {
+        "text": "GitHub Repository",
+        "icon": "fab fa-github",
+        "type": "external",
+        "url": "https://github.com/QuantaAlpha/GitTaskBench",
+        "variant": "secondary"
+      }
+    ],
+    "codeVisualization": {
+      "filename": "benchmark_task.py",
+      "code": [
+        "def evaluate_model(model):",
+        "  return run_benchmark(model)"
+      ]
+    }
+  },
+
+  "featuresSection": {
+    "title": "Why GitTaskBench?",
+    "description": "Comprehensive framework for evaluating Code Agents on real-world repository-level tasks",
+    "features": [
+      {
+        "icon": "fas fa-code-branch",
+        "title": "Real-world Tasks",
+        "description": "Curated from actual GitHub repositories and realistic daily life, ensuring practical relevance and diversity in programming challenges. Each domain reflects real-world applications and research challenges."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "Multi-domain Coverage",
+        "description": "Spans across 7 different domains including image, video, speech, physiological signals processing, security development, document processing, and web scraping."
+      },
+      {
+        "icon": "fas fa-trophy",
+        "title": "Standardized Evaluation",
+        "description": "Consistent evaluation metrics and automated testing framework for fair model comparison."
+      },
+      {
+        "icon": "fas fa-database",
+        "title": "Rich Dataset",
+        "description": "Over 54 carefully selected tasks with ground truth implementations and comprehensive test suites."
+      },
+      {
+        "icon": "fas fa-cogs",
+        "title": "Easy Integration",
+        "description": "It can be directly integrated with state-of-the-art agent frameworks and models, equipped with detailed guidance, and provides a one-stop solution for batch task execution."
+      },
+      {
+        "icon": "fas fa-users",
+        "title": "Community Driven",
+        "description": "Open-source project encouraging community contributions and collaborative improvements."
+      }
+    ]
+  },
+
+  "statisticsSection": {
+    "stats": [
+      {
+        "number": "54+",
+        "label": "Benchmark Tasks"
+      },
+      {
+        "number": "7",
+        "label": "Domains Covered"
+      },
+      {
+        "number": "18+",
+        "label": "GitHub Repositories"
+      },
+      {
+        "number": "100%",
+        "label": "Open Source"
+      }
+    ]
+  },
+
+  "gettingStartedSection": {
+    "title": "Getting Started",
+    "description": "Start evaluating your AI models with GitTaskBench in just a few steps",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Install GitTaskBench",
+        "code": "pip install gittaskbench"
+      },
+      {
+        "step": 2,
+        "title": "Run Evaluation",
+        "code": "gittaskbench [-v] grade --taskid <taskid> [--output_dir <output_dir>] [--result <result>]"
+      },
+      {
+        "step": 3,
+        "title": "View Results",
+        "code": "gittaskbench eval  [--result <result>]"
+      }
+    ]
+  },
+
+  "externalLinks": {
+    "paper": "https://arxiv.org/abs/2508.18993",
+    "github": "https://github.com/QuantaAlpha/GitTaskBench",
+    "datasets": "https://huggingface.co/datasets/Nicole-Yi/GitTaskBench"
+  }
+}

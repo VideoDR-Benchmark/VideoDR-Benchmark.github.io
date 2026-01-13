@@ -1,0 +1,197 @@
+{
+  "pageMetadata": {
+    "title": "VideoDR Leaderboard",
+    "description": "Performance rankings of MLLMs on VideoDR benchmark for workflow vs agentic video reasoning",
+    "lastUpdated": "",
+    "totalTasks": 100
+  },
+  "metrics": {
+    "chart": [
+      { "key": "ACC", "label": "ACC" },
+      { "key": "ThinkCount", "label": "Think Calls" },
+      { "key": "SearchCount", "label": "Search Calls" },
+      { "key": "TotalTime", "label": "Total Time (s)" }
+    ],
+    "table": [
+      { "key": "ACC", "label": "ACC (%)", "sortable": true, "format": "percent", "icon": "fas fa-check-circle" },
+      { "key": "ThinkCount", "label": "Think Calls", "sortable": true, "format": "number", "icon": "fas fa-brain" },
+      { "key": "SearchCount", "label": "Search Calls", "sortable": true, "format": "number", "icon": "fas fa-search" },
+      { "key": "TotalTime", "label": "Total Time (s)", "sortable": true, "format": "number", "icon": "fas fa-clock" }
+    ]
+  },
+  "externalLinks": {
+    "researchPaper": {
+      "url": "https://arxiv.org/abs/2601.06943",
+      "title": "Research Paper",
+      "description": "Methodology and results",
+      "icon": "fas fa-file-alt"
+    },
+    "huggingFace": {
+      "url": "https://huggingface.co/datasets/Yu2020/VideoDR",
+      "title": "HuggingFace",
+      "description": "Datasets and models",
+      "icon": "fas fa-heart"
+    },
+    "submitModel": {
+      "url": "",
+      "title": "Submit Model",
+      "description": "Submit for evaluation",
+      "icon": "fas fa-upload",
+      "action": "scrollToSubmit"
+    }
+  },
+  "leaderboardData": [
+    {
+      "Framework": "Workflow",
+      "LLM": "Qwen3-Omni-30B-A3B",
+      "ACC": 37.0,
+      "ThinkCount": 1.82,
+      "SearchCount": 0.95,
+      "TotalTime": 222.86,
+      "SiteUrl": "https://qwen.ai/blog?id=65f766fc2dcba7905c1cb69cc4cab90e94126bf4&from=research.latest-advancements-list"
+    },
+    {
+      "Framework": "Agentic",
+      "LLM": "Qwen3-Omni-30B-A3B",
+      "ACC": 37.0,
+      "ThinkCount": 1.80,
+      "SearchCount": 1.21,
+      "TotalTime": 367.19,
+      "SiteUrl": "https://qwen.ai/blog?id=65f766fc2dcba7905c1cb69cc4cab90e94126bf4&from=research.latest-advancements-list"
+    },
+    {
+      "Framework": "Workflow",
+      "LLM": "InternVL3.5-14B",
+      "ACC": 27.0,
+      "ThinkCount": 1.58,
+      "SearchCount": 1.48,
+      "TotalTime": 214.28,
+      "SiteUrl": "https://internvl.github.io/blog/2025-08-26-InternVL-3.5/"
+    },
+    {
+      "Framework": "Agentic",
+      "LLM": "InternVL3.5-14B",
+      "ACC": 30.0,
+      "ThinkCount": 1.20,
+      "SearchCount": 1.24,
+      "TotalTime": 228.05,
+      "SiteUrl": "https://internvl.github.io/blog/2025-08-26-InternVL-3.5/"
+    },
+    {
+      "Framework": "Workflow",
+      "LLM": "MiniCPM-V 4.5",
+      "ACC": 25.0,
+      "ThinkCount": 0.94,
+      "SearchCount": 1.13,
+      "TotalTime": 242.21,
+      "SiteUrl": "https://www.openbmb.cn/community/blogs/blogpage?id=12f77ca9310c4973ad866b3043bfee7c"
+    },
+    {
+      "Framework": "Agentic",
+      "LLM": "MiniCPM-V 4.5",
+      "ACC": 16.0,
+      "ThinkCount": 1.97,
+      "SearchCount": 2.07,
+      "TotalTime": 139.07,
+      "SiteUrl": "https://www.openbmb.cn/community/blogs/blogpage?id=12f77ca9310c4973ad866b3043bfee7c"
+    },
+    {
+      "Framework": "Workflow",
+      "LLM": "Gemini-3-pro-preview",
+      "ACC": 69.0,
+      "ThinkCount": 2.40,
+      "SearchCount": 1.86,
+      "TotalTime": 422.48,
+      "SiteUrl": "https://deepmind.google/models/gemini/pro/"
+    },
+    {
+      "Framework": "Agentic",
+      "LLM": "Gemini-3-pro-preview",
+      "ACC": 76.0,
+      "ThinkCount": 2.89,
+      "SearchCount": 2.52,
+      "TotalTime": 449.44,
+      "SiteUrl": "https://deepmind.google/models/gemini/pro/"
+    },
+    {
+      "Framework": "Workflow",
+      "LLM": "GPT-4o",
+      "ACC": 42.0,
+      "ThinkCount": 1.90,
+      "SearchCount": 1.11,
+      "TotalTime": 136.15,
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "Agentic",
+      "LLM": "GPT-4o",
+      "ACC": 43.0,
+      "ThinkCount": 1.31,
+      "SearchCount": 1.17,
+      "TotalTime": 181.87,
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    }
+  ],
+  "filterOptions": {
+    "domains": [
+      "Daily Life",
+      "Economy",
+      "Technology",
+      "Culture",
+      "History",
+      "Geography"
+    ],
+    "frameworks": ["Workflow", "Agentic"],
+    "modelTypes": ["open-source", "closed-source"],
+    "chartTypes": ["ACC", "ThinkCount", "SearchCount"],
+    "sortColumns": ["ACC", "ThinkCount", "SearchCount", "TotalTime"]
+  },
+  "chartConfig": {
+    "defaultChartType": "ACC",
+    "sortDirection": "desc",
+    "primarySortColumn": "ACC"
+  },
+  "uiConfig": {
+    "ranking": {
+      "gold": { "rank": 1, "icon": "fas fa-crown" },
+      "silver": { "rank": 2, "icon": "fas fa-medal" },
+      "bronze": { "rank": 3, "icon": "fas fa-award" }
+    },
+    "modelTypeIcons": {
+      "open-source": "fas fa-unlock",
+      "closed-source": "fas fa-lock"
+    }
+  },
+  "frameworkMetadata": {
+    "Workflow": { "name": "Workflow", "logo": "", "website": "" },
+    "Agentic": { "name": "Agentic", "logo": "", "website": "" }
+  },
+  "llmMetadata": {
+    "Qwen3-Omni-30B-A3B": { "name": "Qwen3-Omni-30B-A3B", "logo": "qwen", "type": "open-source" },
+    "InternVL3.5-14B": { "name": "InternVL3.5-14B", "logo": "internai", "type": "open-source" },
+    "MiniCPM-V 4.5": { "name": "MiniCPM-V 4.5", "logo": "openbmb", "type": "open-source" },
+    "Gemini-3-pro-preview": { "name": "Gemini-3-pro-preview", "logo": "gemini", "type": "closed-source" },
+    "GPT-4o": { "name": "GPT-4o", "logo": "gpt", "type": "closed-source" }
+  },
+  "faqItems": [],
+  "submissionGuide": {
+    "title": "How to Submit Your Model Results to VideoDR",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Run Evaluation on Full Benchmark",
+        "description": "Once you have access to the complete VideoDR test set (100 samples), evaluate your multimodal model or agent using either the Workflow or Agentic paradigm, and report the overall Accuracy (%), stratified Accuracy across difficulty levels (Low / Mid / High), stratified Accuracy across video duration categories (Short / Medium / Long), and performance breakdown by semantic domains, strictly following the official LLM-as-Judge protocol (DeepSeek-V3 is recommended) for fair and consistent semantic equivalence judgment."
+      },
+      {
+        "step": 2,
+        "title": "Prepare Submission Package",
+        "description": "Create a submission package that includes: (1) a final results JSON file containing overall and all stratified accuracies, (2) detailed model and framework configuration (including paradigm, version, prompt templates, and tool definitions), and (3) complete prediction traces / logs covering all 100 samples to enable thorough reproducibility and analysis."
+      },
+      {
+        "step": 3,
+        "title": "Email Submission",
+        "description": "Package all materials described above and contact the authors directly via the email address provided in the repository README or the camera-ready paper for official submission and leaderboard consideration."
+      }
+    ]
+  }
+}

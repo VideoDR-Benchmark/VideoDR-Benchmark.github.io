@@ -1,0 +1,525 @@
+{
+  "pageMetadata": {
+    "title": "LeaderBoard",
+    "description": "Performance rankings of AI agents on GitTaskBench evaluation tasks",
+    "lastUpdated": "2024-01-15",
+    "totalTasks": 54
+  },
+
+  "externalLinks": {
+    "researchPaper": {
+      "url": "https://arxiv.org/pdf/2508.18993",
+      "title": "Research Paper",
+      "description": "Methodology and results",
+      "icon": "fas fa-file-alt"
+    },
+    "huggingFace": {
+      "url": "https://huggingface.co/datasets/Nicole-Yi/GitTaskBench",
+      "title": "HuggingFace",
+      "description": "Datasets and models",
+      "icon": "fas fa-heart"
+    },
+    "submitModel": {
+      "url": "#",
+      "title": "Submit Model",
+      "description": "Submit for evaluation",
+      "icon": "fas fa-upload",
+      "action": "scrollToSubmit"
+    }
+  },
+
+  "leaderboardData": [
+    {
+      "Framework": "Aider",
+      "LLM": "GPT-4o",
+      "ECR": 5.56,
+      "TPR": 1.85,
+      "InputTokens": 10.67,
+      "OutputTokens": 492.67,
+      "Cost": 0.0316,
+      "CommitDate": "2025-08-09",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "Aider",
+      "LLM": "GPT-4.1",
+      "ECR": 11.11,
+      "TPR": 7.41,
+      "InputTokens": 14.83,
+      "OutputTokens": 734.17,
+      "Cost": 0.0355,
+      "CommitDate": "2025-08-09",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "Aider",
+      "LLM": "Claude 3.5",
+      "ECR": 16.67,
+      "TPR": 12.96,
+      "InputTokens": 7.48,
+      "OutputTokens": 534.00,
+      "Cost": 0.0304,
+      "CommitDate": "2025-08-09",
+      "SiteUrl": "https://github.com/anthropics/anthropic-sdk-python"
+    },
+    {
+      "Framework": "Aider",
+      "LLM": "DeepSeekV3",
+      "ECR": 20.37,
+      "TPR": 16.67,
+      "InputTokens": 7.51,
+      "OutputTokens": 599.64,
+      "Cost": 0.00269,
+      "CommitDate": "2025-08-09",
+      "SiteUrl": "https://github.com/deepseek-ai/DeepSeek-V3"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "GPT-4o",
+      "ECR": 17.58,
+      "TPR": 10.19,
+      "InputTokens": 275.53,
+      "OutputTokens": 1282.70,
+      "Cost": 0.778,
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "GPT-4.1",
+      "ECR": 38.89,
+      "TPR": 31.48,
+      "InputTokens": 301.11,
+      "OutputTokens": 2098.33,
+      "Cost": 0.661,
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "o3-mini",
+      "ECR": 25.93,
+      "TPR": 20.37,
+      "InputTokens": 158.45,
+      "OutputTokens": 215.20,
+      "Cost": 0.175,
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "Claude 3.5",
+      "ECR": 41.67,
+      "TPR": 22.23,
+      "InputTokens": 455.34,
+      "OutputTokens": 943.30,
+      "Cost": 1.38,
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://github.com/anthropics/anthropic-sdk-python"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "Claude 3.7",
+      "ECR": 64.81,
+      "TPR": 42.59,
+      "InputTokens": 552.79,
+      "OutputTokens": 807.63,
+      "Cost": 1.67,
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://github.com/anthropics/anthropic-sdk-python"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "DeepSeekV3",
+      "ECR": 18.52,
+      "TPR": 12.04,
+      "InputTokens": 412.65,
+      "OutputTokens": 1649.82,
+      "Cost": 0.113,
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://github.com/deepseek-ai/DeepSeek-V3"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "Qwen3-32b*",
+      "ECR": 7.41,
+      "TPR": 3.70,
+      "InputTokens": 1445.97,
+      "OutputTokens": 2405.00,
+      "Cost": "-",
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "Qwen3-32b*†",
+      "ECR": 16.67,
+      "TPR": 11.11,
+      "InputTokens": 124.15,
+      "OutputTokens": 559.11,
+      "Cost": "-",
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "Framework": "SWE-Agent",
+      "LLM": "Llama3.3-70b*",
+      "ECR": 25.83,
+      "TPR": 18.52,
+      "InputTokens": 397.03,
+      "OutputTokens": 1985.64,
+      "Cost": "-",
+      "CommitDate": "2025-05-22",
+      "SiteUrl": "https://github.com/meta-llama/llama3.3"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "GPT-4o",
+      "ECR": 21.30,
+      "TPR": 14.82,
+      "InputTokens": 760.53,
+      "OutputTokens": 3990.31,
+      "Cost": 1.94,
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "GPT-4.1",
+      "ECR": 55.56,
+      "TPR": 42.59,
+      "InputTokens": 465.94,
+      "OutputTokens": 1535.47,
+      "Cost": 0.942,
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "o3-mini",
+      "ECR": 29.63,
+      "TPR": 22.22,
+      "InputTokens": 2523.53,
+      "OutputTokens": 183637.53,
+      "Cost": 3.58,
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Claude 3.5",
+      "ECR": 53.70,
+      "TPR": 40.74,
+      "InputTokens": 2858.00,
+      "OutputTokens": 24929.47,
+      "Cost": 8.95,
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/anthropics/anthropic-sdk-python"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Claude 3.7",
+      "ECR": 72.22,
+      "TPR": 48.15,
+      "InputTokens": 9501.25,
+      "OutputTokens": 85033.05,
+      "Cost": 29.8,
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/anthropics/anthropic-sdk-python"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Gemini-2.5-pro",
+      "ECR": 51.85,
+      "TPR": 35.19,
+      "InputTokens": 760.88,
+      "OutputTokens": 35173.29,
+      "Cost": 2.18,
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/google/generative-ai-python"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "DeepSeekV3",
+      "ECR": 45.37,
+      "TPR": 26.85,
+      "InputTokens": 4717.78,
+      "OutputTokens": 31957.67,
+      "Cost": 1.31,
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/deepseek-ai/DeepSeek-V3"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Qwen3-8b*",
+      "ECR": 1.85,
+      "TPR": 1.85,
+      "InputTokens": 846.26,
+      "OutputTokens": 2045.00,
+      "Cost": "-",
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Qwen3-14b*",
+      "ECR": 11.11,
+      "TPR": 5.56,
+      "InputTokens": 339.42,
+      "OutputTokens": 2540.17,
+      "Cost": "-",
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Qwen3-32b*",
+      "ECR": 35.19,
+      "TPR": 25.93,
+      "InputTokens": 591.02,
+      "OutputTokens": 2097.89,
+      "Cost": "-",
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Qwen3-32b*†",
+      "ECR": 44.44,
+      "TPR": 29.63,
+      "InputTokens": 208.00,
+      "OutputTokens": 8755.35,
+      "Cost": "-",
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "Framework": "OpenHands",
+      "LLM": "Llama3.3-70b*",
+      "ECR": 27.78,
+      "TPR": 20.37,
+      "InputTokens": 132.69,
+      "OutputTokens": 872.93,
+      "Cost": "-",
+      "CommitDate": "2025-09-09",
+      "SiteUrl": "https://github.com/meta-llama/llama3.3"
+    },
+    {
+      "Framework": "RepoMaster",
+      "LLM": "GPT-4o",
+      "ECR": 48.14,
+      "TPR": 40.74,
+      "InputTokens": 248.8,
+      "OutputTokens": 1231,
+      "Cost": 0.70,
+      "CommitDate": "2025-08-28",
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "RepoMaster",
+      "LLM": "Claude 3.5",
+      "ECR": 75.92,
+      "TPR": 62.96,
+      "InputTokens": 153.2,
+      "OutputTokens": 827,
+      "Cost": 0.48,
+      "CommitDate": "2025-08-28",
+      "SiteUrl": "https://github.com/anthropics/anthropic-sdk-python"
+    },
+    {
+      "Framework": "RepoMaster",
+      "LLM": "DeepSeekV3",
+      "ECR": 61.11,
+      "TPR": 44.44,
+      "InputTokens": 253.6,
+      "OutputTokens": 1366,
+      "Cost": 0.07,
+      "CommitDate": "2025-08-28",
+      "SiteUrl": "https://github.com/deepseek-ai/DeepSeek-V3"
+    }
+  ],
+
+  "filterOptions": {
+    "domains": [
+      "Machine Learning",
+      "Web Development",
+      "Data Processing",
+      "Computer Vision",
+      "Natural Language Processing",
+      "System Utilities",
+      "API Development",
+      "Database Management"
+    ],
+    "frameworks": ["Aider", "SWE-Agent", "OpenHands", "RepoMaster"],
+    "modelTypes": ["open-source", "proprietary"],
+    "chartTypes": ["tpr", "ecr"],
+    "sortColumns": ["tpr", "ecr", "cost"]
+  },
+
+  "chartConfig": {
+    "defaultChartType": "tpr",
+    "sortDirection": "desc",
+    "primarySortColumn": "tpr",
+    "secondarySortColumn": "ecr"
+  },
+
+  "uiConfig": {
+    "ranking": {
+      "gold": { "rank": 1, "icon": "fas fa-crown" },
+      "silver": { "rank": 2, "icon": "fas fa-medal" },
+      "bronze": { "rank": 3, "icon": "fas fa-award" }
+    },
+    "modelTypeIcons": {
+      "open-source": "fas fa-unlock",
+      "proprietary": "fas fa-lock"
+    }
+  },
+
+  "frameworkMetadata": {
+    "Aider": {
+      "name": "Aider",
+      "logo": "@/assets/logos/aider.png",
+      "website": "https://github.com/Aider-AI/aider"
+    },
+    "SWE-Agent": {
+      "name": "SWE-Agent",
+      "logo": "@/assets/logos/swe.png",
+      "website": "https://github.com/SWE-agent/SWE-agent"
+    },
+    "OpenHands": {
+      "name": "OpenHands",
+      "logo": "@/assets/logos/openhands.png",
+      "website": "https://github.com/All-Hands-AI/OpenHands"
+    },
+    "RepoMaster": {
+      "name": "RepoMaster",
+      "logo": "@/assets/logos/qa-base.png",
+      "website": "https://github.com/QuantaAlpha/RepoMaster"
+    }
+  },
+
+  "llmMetadata": {
+    "GPT-4o": {
+      "name": "GPT-4o",
+      "logo": "@/assets/logos/gpt.png",
+      "type": "proprietary"
+    },
+    "GPT-4.1": {
+      "name": "GPT-4.1",
+      "logo": "@/assets/logos/gpt.png",
+      "type": "proprietary"
+    },
+    "o3-mini": {
+      "name": "o3-mini",
+      "logo": "@/assets/logos/gpt.png",
+      "type": "proprietary"
+    },
+    "Claude 3.5": {
+      "name": "Claude 3.5",
+      "logo": "@/assets/logos/claude.svg",
+      "type": "proprietary"
+    },
+    "Claude 3.7": {
+      "name": "Claude 3.7",
+      "logo": "@/assets/logos/claude.svg",
+      "type": "proprietary"
+    },
+    "DeepSeekV3": {
+      "name": "DeepSeekV3",
+      "logo": "@/assets/logos/deepseek.svg",
+      "type": "open-source"
+    },
+    "Gemini-2.5-pro": {
+      "name": "Gemini-2.5-pro",
+      "logo": "@/assets/logos/gemini.svg",
+      "type": "proprietary"
+    },
+    "Qwen3-8b*": {
+      "name": "Qwen3-8b*",
+      "logo": "@/assets/logos/qwen.png",
+      "type": "open-source"
+    },
+    "Qwen3-14b*": {
+      "name": "Qwen3-14b*",
+      "logo": "@/assets/logos/qwen.png",
+      "type": "open-source"
+    },
+    "Qwen3-32b*": {
+      "name": "Qwen3-32b*",
+      "logo": "@/assets/logos/qwen.png",
+      "type": "open-source"
+    },
+    "Qwen3-32b*†": {
+      "name": "Qwen3-32b*†",
+      "logo": "@/assets/logos/qwen.png",
+      "type": "open-source"
+    },
+    "Llama3.3-70b*": {
+      "name": "Llama3.3-70b*",
+      "logo": "@/assets/logos/llama.svg",
+      "type": "open-source"
+    }
+  },
+
+  "faqItems": [
+    {
+      "question": "How is the α score calculated?",
+      "answer": "α is an optional cost-effectiveness composite score that balances performance and cost, representing the practical value within specific domains. Since this leaderboard aggregates results across all domains and tasks, this particular metric is not displayed. For the detailed calculation and formula, please refer to the official implementation in the paper."
+    },
+    {
+      "question": "Can I submit results for only specific domains?",
+      "answer": "No. Overall scores are evaluated. The leaderboard is sorted by Task Pass by default (if equal, then by Execution Completion)."
+    },
+    {
+      "question": "What do ECR and TPR represent?",
+      "answer": "Execution Completion (whether valid results are produced) / Task Pass (whether task-specific evaluation criteria are met)"
+    }
+  ],
+
+  "submissionGuide": {
+    "title": "How to Submit Your Results",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Fork and Add Results",
+        "description": "Fork GitTaskBench repository and add your final results obtained on GitTaskBench to src/submissions/, with one JSON file per submission (see schema and examples). The JSON file specifies all required attribute categories to be filled in.",
+        "links": [
+          {
+            "text": "GitTaskBench repository",
+            "url": "https://github.com/QuantaAlpha/GitTaskBench"
+          },
+          {
+            "text": "schema",
+            "url": "https://github.com/GitTaskBench/GitTaskBench.github.io/blob/main/src/submissions/schema.json"
+          }
+        ]
+      },
+      {
+        "step": 2,
+        "title": "Include Evaluation Details",
+        "description": "In your PR, include evaluation configuration details (framework, model, hyperparameters, versions, etc.), along with key logs and result files (you may link to a public gist or repository)."
+      },
+      {
+        "step": 3,
+        "title": "Manual Review",
+        "description": "After passing our manual review (to ensure validity), we will merge the results and update the leaderboard accordingly."
+      },
+      {
+        "step": 4,
+        "title": "Leaderboard Updates",
+        "description": "If new benchmark results are submitted, the leaderboard will be updated on a weekly basis."
+      },
+      {
+        "step": 5,
+        "title": "Contact",
+        "description": "If you have any questions, please feel free to contact us at: quantaalpha.ai@gmail.com",
+        "links": [
+          {
+            "text": "quantaalpha.ai@gmail.com",
+            "url": "mailto:quantaalpha.ai@gmail.com"
+          }
+        ]
+      }
+    ]
+  }
+}

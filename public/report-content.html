@@ -1,0 +1,273 @@
+<style>
+p { margin: 0.3em 0; }
+</style>
+<h1 style="text-align: center; font-size: 2.5rem; font-weight: 700; margin: 0.5em 0 0.3em 0; color: #1a202c; line-height: 1.2;">
+<strong>CodeAgent 2.0 Era Begins｜GitTaskBench: Redefining the Standard for Practical Delivery of Code Agents!</strong>
+</h1>
+<h2 style="text-align: center; font-size: 1.2rem; font-weight: 500; margin: 1em 0 1em 0; color: #666; text-transform: uppercase; letter-spacing: 2px;">Introduction</h2>
+<p>Have you ever wondered: despite models scoring high on various leaderboards, why does the real-world experience often fall short?</p>
+<p>We observed that most AI coding benchmarks remain focused on “code generation” and “closed-form questions,” while neglecting the real needs of developers such as environment setup, dependency handling, and cross-repository resource utilization. Today’s benchmarks, limited to problem-solving, are no longer sufficient to measure the true effectiveness of code agents.</p>
+<p>To break through these limitations, researchers from <strong>CAS, Peking University, HKUST, USTC, NUS</strong>, together with the open-source research organization       <strong>QuantaAlpha</strong> and the       <strong>StepStar team led by Jiang Daxin</strong>, introduced and open-sourced a       <strong>repo-level benchmark paradigm — GitTaskBench</strong>.</p>
+<h4 style="font-size: 1.1rem; font-weight: 600; margin: 1em 0 0.5em 0; color: #2d3748;">Key highlights:</h4>
+
+<ol style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">Evaluates the <strong>full-chain capability</strong> of agents: from repository understanding → environment setup → incremental development/bug fixing → project-level delivery.</li>
+  <li style="margin-bottom: 0.4em;">For the first time, incorporates the <strong>"economic value"</strong> of the framework × model combination into evaluation metrics, offering new insights for academia, industry, and entrepreneurship.</li>
+</ol>
+
+<p>
+<img src="./images/report/image-q2kfdnrc3.png" />
+</p>
+<p>📄 Paper:
+  <a href="https://arxiv.org/abs/2508.18993">
+<em>GitTaskBench: A Benchmark for Code Agents Solving Real-World Tasks Through Code Repository Leveraging</em>
+</a>
+<br />📂 GitHub:<a href="https://github.com/QuantaAlpha/GitTaskBench" target="_new"><em>https://github.com/QuantaAlpha/GitTaskBench</em></a>
+</p>
+<h3 style="font-size: 1.4rem; font-weight: 600; margin: 1.2em 0 0.6em 0; color: #2d3748;">GitTaskBench Overview</h3>
+
+<h4 style="font-size: 1.1rem; font-weight: 400; margin: 1em 0 0.5em 0; color: #2d3748;">The open-source version covers:</h4>
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">
+      <strong>7 modalities × 7 domains × 24 subdomains</strong>
+</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>54 real-world tasks</strong>
+</li>
+</ul>
+
+<h4 style="font-size: 1.1rem; font-weight: 400; margin: 1em 0 0.5em 0; color: #2d3748;">Repository stats:</h4>
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">
+      <strong>18 backend repos</strong>
+</li>
+  <li style="margin-bottom: 0.4em;">Avg.       <strong>204 files</strong>,       <strong>1,274.78 functions</strong>,       <strong>52.63k lines of code</strong>
+</li>
+  <li style="margin-bottom: 0.4em;">Avg.       <strong>1,242.72 file references/dependencies</strong>
+</li>
+</ul>
+
+<h4 style="font-size: 1.1rem; font-weight: 400; margin: 1em 0 0.5em 0; color: #2d3748;">Each task comes with:</h4>
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">A       <strong>full GitHub repository</strong>
+</li>
+  <li style="margin-bottom: 0.4em;">Natural language instructions</li>
+  <li style="margin-bottom: 0.4em;">Explicit input/output formats</li>
+  <li style="margin-bottom: 0.4em;">Task-specific automated evaluation scripts</li>
+</ul>
+
+<p>The following image shows the domain and modal distribution of GitTaskBench, including the corresponding quantity.<img src="./images/report/image-sfp8vyth5.png" />
+</p>
+<h3 style="font-size: 1.4rem; font-weight: 600; margin: 1.2em 0 0.6em 0; color: #2d3748;">Constructing End-to-End Repo-Level Evaluation</h3>
+<p>GitTaskBench evaluates code agents across three key dimensions:</p>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">Comprehensive Code Control: Reading docs, resolving dependencies, generating/modifying/debugging code.</li>
+  <li style="margin-bottom: 0.4em;">Task-Oriented Execution: Multi-round reasoning &amp; tool use, delivering outputs aligned with task goals, leveraging repos but not limited to them.</li>
+  <li style="margin-bottom: 0.4em;">Autonomous Environment Setup: Independent installation and dependency resolution without prebuilt Docker images.</li>
+</ul>
+
+<p>The following figure provides an overview of the entire process from repository collection to task evaluation:</p>
+<p>
+<img src="./images/report/image-wxrwsuh3d.png" />
+</p>
+<h4 style="font-size: 1.1rem; font-weight: 600; margin: 1em 0 0.5em 0; color: #2d3748;">Four Phases of Benchmark Construction</h4>
+
+<ol style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.6em;">Repository Selection
+<ul style="margin: 0.5em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.5em;">Define task scope via literature review, LLM retrieval, and expert consultation.</li>
+  <li style="margin-bottom: 0.5em;">Select Python repos with ⭐≥50, recent activity (within 5 years), usable dependencies, and easy configuration.</li>
+  <li style="margin-bottom: 0.5em;">Manual verification of stars, forks, license, and commit history ensures reliability.</li>
+</ul>
+
+</li>
+  <li style="margin-bottom: 0.6em;">Completeness Verification
+<ul style="margin: 0.5em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.5em;">Includes necessary dependency/config files, datasets, and pretrained models.</li>
+  <li style="margin-bottom: 0.5em;">Strict reproduction to ensure 100% human replicability.</li>
+  <li style="margin-bottom: 0.5em;">Any gated resources are documented in README for full self-containment.</li>
+</ul>
+
+</li>
+  <li style="margin-bottom: 0.6em;">Execution Framework Design
+<ul style="margin: 0.5em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.5em;">Unified task definitions and I/O specifications.</li>
+  <li style="margin-bottom: 0.5em;">Agents must perform: repo understanding → code generation/modification → environment setup → execution.</li>
+</ul>
+
+</li>
+  <li style="margin-bottom: 0.6em;">Automated Evaluation
+<ul style="margin: 0.5em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.5em;">Custom test scripts validated by humans.</li>
+  <li style="margin-bottom: 0.5em;">Single-command execution yields success/failure + detailed reasons.</li>
+  <li style="margin-bottom: 0.5em;">Enables aggregated metric reporting.</li>
+</ul>
+
+</li>
+</ol>
+
+<h3 style="font-size: 1.4rem; font-weight: 600; margin: 1.2em 0 0.6em 0; color: #2d3748;">
+
+  <a id="heading_2">
+</a>
+Practical Economic Feasibility Analysis</h3>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">GitTaskBench introduces the "cost-effectiveness" concept with three metrics:</li>
+  <li style="margin-bottom: 0.4em;">ECR (Execution Completion Rate): Can the repo run successfully and produce valid, parseable outputs?</li>
+  <li style="margin-bottom: 0.4em;">TPR (Task Pass Rate): Task-specific success thresholds (e.g., PESQ ≥2.0 / SNR ≥15dB for speech enhancement; SSIM/FID for image tasks).</li>
+  <li style="margin-bottom: 0.4em;">α Value (Alpha Practical Value): Average net benefit of the agent when executing tasks.</li>
+  <li style="margin-bottom: 0.4em;">Specific Formula:</li>
+</ul>
+
+<p>
+<img src="./images/report/image-amosvdadi.png" />
+</p>
+<p>Where:</p>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">
+<em>n</em>: number of tasks</li>
+  <li style="margin-bottom: 0.4em;">
+<em>T</em>: success flag (1 = success, 0 = fail, aligned with ECR)</li>
+  <li style="margin-bottom: 0.4em;">
+<em>MV</em>: market value estimate if done by a human</li>
+  <li style="margin-bottom: 0.4em;">
+<em>Q</em>: quality coefficient (0–1), closeness to human-level output</li>
+  <li style="margin-bottom: 0.4em;">
+<em>C</em>: total execution cost (approximated as API costs)</li>
+</ul>
+
+<p>This metric reflects whether it’s <strong>“worthwhile to outsource this task to the agent”</strong>, quantifying cost savings, efficiency gains, and market value of automation.</p>
+<h3 style="font-size: 1.4rem; font-weight: 600; margin: 1.2em 0 0.6em 0; color: #2d3748;">
+
+  <a id="heading_3">
+</a>
+Results: Framework × Model Coupling</h3>
+<p>Experiments adapting mainstream frameworks and models reveal:</p>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.6em;">
+      <strong>OpenHands + Claude 3.7</strong> achieved the best overall results:
+<ul style="margin: 0.5em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.5em;">ECR:       <strong>72.22%</strong>
+</li>
+  <li style="margin-bottom: 0.5em;">TPR:       <strong>48.15%</strong>
+</li>
+</ul>
+
+</li>
+  <li style="margin-bottom: 0.6em;">
+      <strong>GPT-4.1</strong> emerged as the cost-effectiveness champion:
+<ul style="margin: 0.5em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.5em;">Comparable success rates at       <strong>1/10–1/30 the cost of Claude</strong> (under OpenHands).</li>
+  <li style="margin-bottom: 0.5em;">Consistently strong performance in SWE-Agent tasks with lower cost.</li>
+</ul>
+
+</li>
+  <li style="margin-bottom: 0.6em;">
+      <strong>Qwen3-32B (think mode)</strong>: Achieved ~60% of Claude 3.5's performance with fewer tokens.</li>
+  <li style="margin-bottom: 0.6em;">
+      <strong>Task preference trends</strong>:
+<ul style="margin: 0.5em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.5em;">Stable on text/office tasks.</li>
+  <li style="margin-bottom: 0.5em;">More difficult on multi-modal and compute-heavy tasks (e.g., image restoration requiring many dependencies/weights).</li>
+</ul>
+
+</li>
+</ul>
+
+<p>More detailed analysis of the performance of different frameworks and models in various task domains:</p>
+<p>
+<img src="./images/report/image-o94f9u91l.png" />
+</p>
+<p>In addition, the real-world value beyond capabilities also deserves attention.：</p>
+<h4 style="font-size: 1.1rem; font-weight: 600; margin: 1em 0 0.5em 0; color: #2d3748;">Market Value Sensitivity</h4>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">For high-MV repos (e.g.,       <strong>VideoPose3D</strong>,       <strong>FunASR</strong>,       <strong>NeuroKit</strong>), successful agent completion yields large positive α.</li>
+  <li style="margin-bottom: 0.4em;">For low-MV image tasks (MV ≈ $5–10), high execution cost (&gt; $1–2) often leads to negative α.</li>
+  <li style="margin-bottom: 0.4em;">This highlights that       <strong>cost control is critical in low-market-value tasks</strong>.</li>
+</ul>
+
+
+<table>
+  <tr>
+    <td>
+<p>
+<img src="./images/report/image-vupipp54t.png" />
+</p>
+</td>
+    <td>
+<p>
+<img src="./images/report/image-vjtb6s2cc.png" />
+</p>
+</td>
+</tr>
+</table>
+
+<h4 style="font-size: 1.1rem; font-weight: 600; margin: 1em 0 0.5em 0; color: #2d3748;">Model-Specific Findings</h4>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">
+      <strong>DeepSeek V3</strong>: Highest net returns and best cost-effectiveness across most repos.</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>GPT-4.1</strong>: Most stable and robust across scenarios, with minimal performance drops.</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>Claude 3.5</strong>: Strong in information extraction, but cost-sensitive in compute-heavy vision tasks.</li>
+</ul>
+
+<h3 style="font-size: 1.4rem; font-weight: 600; margin: 1.2em 0 0.6em 0; color: #2d3748;">
+
+  <a id="heading_4">
+</a>
+Conclusion</h3>
+<p>The findings suggest that choosing the right <strong>framework × model</strong> requires a       <strong>tri-factor trade-off</strong>: effectiveness, cost, and API consumption.</p>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">Claude excels in coding tasks.</li>
+  <li style="margin-bottom: 0.4em;">GPT-4.1 offers greater stability and cost savings in many scenarios.</li>
+  <li style="margin-bottom: 0.4em;">Open-source models can achieve better α in specific repos.</li>
+</ul>
+
+<h3 style="font-size: 1.4rem; font-weight: 600; margin: 1.2em 0 0.6em 0; color: #2d3748;">Broader Applications of GitTaskBench</h3>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">
+      <strong>Agent Infrastructure</strong>: Regression testing for base comparisons, workflow improvements (environment mgmt, dependency repair, entry detection, execution planning).</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>Application Evaluation</strong>: Multi-metric (ECR/TPR/α) evidence for PoC or production deployment decisions.</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>Task Design Library</strong>: Ready-to-use evaluation cases across image, speech, physiological signals, office docs, and web crawling.</li>
+</ul>
+
+
+<table>
+  <tr>
+    <td>
+<h3 style="font-size: 1.4rem; font-weight: 600; margin: 1.2em 0 0.6em 0; color: #2d3748;">About QuantaAlpha</h3>
+<p>Founded in       <strong>April 2025</strong>, QuantaAlpha is composed of professors, postdocs, PhDs, and master's students from       <strong>Tsinghua, Peking University, CAS, CMU, HKUST</strong>, and more.</p>
+<p>Our mission: to explore the <strong>“quantum” of intelligence</strong> and lead the       <strong>“alpha” frontier</strong> of agent research — from       <strong>CodeAgents</strong> to       <strong>self-evolving agents</strong>, and to domain-specialized agents in finance and beyond, aiming to reshape the boundaries of AI. 🌟</p>
+<p>✨ In 2025, we will continue producing high-quality research in:</p>
+
+<ul style="margin: 0.5em 0 0.8em 0; padding-left: 1.5em;">
+  <li style="margin-bottom: 0.4em;">
+      <strong>CodeAgent</strong> (end-to-end autonomous execution of real-world tasks)</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>DeepResearch</strong>
+</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>Agentic Reasoning / Agentic RL</strong>
+</li>
+  <li style="margin-bottom: 0.4em;">
+      <strong>Self-evolution &amp; collaborative learning</strong>
+</li>
+</ul>
+
+<p>🌐 Team homepage:
+  <a href="https://quantaalpha.github.io/" target="_new">https://quantaalpha.github.io/</a>
+</p>
+</td>
+</tr>
+</table>

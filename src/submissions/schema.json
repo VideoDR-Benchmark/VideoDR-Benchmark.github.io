@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "GitTaskBench Model Performance",
+  "description": "Submit your model performance data to the leaderboard",
+  "properties": {
+    "Framework": {
+      "type": "string",
+      "title": "Framework",
+      "description": "AI framework name (e.g., Aider, SWE-Agent, OpenHands)"
+    },
+    "LLM": {
+      "type": "string",
+      "title": "LLM",
+      "description": "Large language model name (e.g., GPT-4o, Claude 3.5)"
+    },
+    "ECR": {
+      "type": "number",
+      "title": "ECR (%)",
+      "description": "Execution Completion Rate (0-100)",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "TPR": {
+      "type": "number",
+      "title": "TPR (%)",
+      "description": "Task Pass Rate (0-100)",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "InputTokens": {
+      "type": "number",
+      "title": "Input Tokens (k)",
+      "description": "Average input tokens in thousands",
+      "minimum": 0
+    },
+    "OutputTokens": {
+      "type": "number",
+      "title": "Output Tokens",
+      "description": "Average output tokens",
+      "minimum": 0
+    },
+    "Cost": {
+      "type": [
+        "number",
+        "string"
+      ],
+      "title": "Cost ($)",
+      "description": "Total cost in USD, use '-' for free models"
+    },
+    "CommitDate": {
+      "type": "string",
+      "title": "Date",
+      "description": "Evaluation date (YYYY-MM-DD)",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "SiteUrl": {
+      "type": "string",
+      "title": "Website",
+      "description": "Model website URL"
+    },
+    "Type": {
+      "type": "string",
+      "title": "Type",
+      "description": "Model type",
+      "enum": [
+        "open-source",
+        "proprietary"
+      ]
+    },
+    "frameLogo": {
+      "type": "string",
+      "title": "Framework Logo URL",
+      "description": "URL to framework logo image (optional)"
+    },
+    "llmLogo": {
+      "type": "string",
+      "title": "LLM Logo URL",
+      "description": "URL to LLM logo image (optional)"
+    }
+  },
+  "required": [
+    "Framework",
+    "LLM",
+    "ECR",
+    "TPR",
+    "InputTokens",
+    "OutputTokens",
+    "Cost",
+    "CommitDate",
+    "SiteUrl",
+    "Type"
+  ],
+  "examples": [
+    {
+      "Framework": "Aider",
+      "LLM": "GPT-4o",
+      "ECR": 5.56,
+      "TPR": 1.85,
+      "InputTokens": 10.67,
+      "OutputTokens": 492.67,
+      "Cost": 0.0316,
+      "CommitDate": "2025-08-09",
+      "SiteUrl": "https://openai.com/research/gpt-4",
+      "Type": "open-source",
+      "frameLogo": "https://gittaskbench.github.io/img/openhands.3a38b1f2.png",
+      "llmLogo": "https://gittaskbench.github.io/img/claude.b3f090ee.svg"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "pageMetadata": {
+    "title": "VideoDR - Video Deep Research Benchmark",
+    "description": "The first video deep research benchmark for evaluating models on video-conditioned open-domain video QA, requiring cross-frame visual anchor extraction, interactive web retrieval, and multi-hop reasoning over joint video-web evidence."
+  },
+
+  "heroSection": {
+    "title": {
+      "main": "VideoDR",
+      "subtitle": "Video Deep Research Benchmark"
+    },
+    "description": "A high-quality benchmark for systematically evaluating MLLMs' ability to perform video deep research in open-web settings, spanning six semantic domains with rigorous human annotation.",
+    "buttons": [
+      {
+        "text": "View Report",
+        "icon": "fas fa-file-alt",
+        "type": "external",
+        "url": "https://arxiv.org/abs/2601.06943",
+        "variant": "primary"
+      },
+      {
+        "text": "View LeaderBoard",
+        "icon": "fas fa-trophy",
+        "type": "internal",
+        "url": "/leaderboard",
+        "variant": "secondary"
+      },
+      {
+        "text": "GitHub Repository",
+        "icon": "fab fa-github",
+        "type": "external",
+        "url": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+        "variant": "secondary"
+      }
+    ],
+    "codeVisualization": {
+      "image_path": "/home_page.png"
+    }
+  },
+
+  "featuresSection": {
+    "title": "Why VideoDR?",
+    "description": "Comprehensive framework for evaluating video agents on open-domain factoid question answering conditioned on videos",
+    "features": [
+      {
+        "icon": "fas fa-code-branch",
+        "title": "Real-world Scenarios",
+        "description": "Videos provide localized visual cues, while verifiable answers are distributed across the open web, requiring joint video-web reasoning."
+      },
+      {
+        "icon": "fas fa-chart-line",
+        "title": "Multi-domain Coverage",
+        "description": "Spans across 6 different domains including Daily Life, Economics, Technology, Culture, History, and Geography."
+      },
+      {
+        "icon": "fas fa-trophy",
+        "title": "Standardized Evaluation",
+        "description": "Evaluates under Workflow and Agentic paradigms with metrics like Accuracy, using LLM-as-judge for semantic equivalence."
+      },
+      {
+        "icon": "fas fa-database",
+        "title": "Rich Dataset",
+        "description": "100 high-quality samples with multi-frame visual anchors, multi-hop reasoning paths, and archived web evidence."
+      },
+      {
+        "icon": "fas fa-cogs",
+        "title": "Easy Integration",
+        "description": "Supports evaluation of closed-source and open-source MLLMs, with stratified analysis across difficulty, duration, and domains."
+      },
+      {
+        "icon": "fas fa-users",
+        "title": "Community Driven",
+        "description": "Open-source project encouraging community contributions and collaborative improvements."
+      }
+    ]
+  },
+
+  "statisticsSection": {
+    "stats": [
+      {
+        "number": "100",
+        "label": "Benchmark Samples"
+      },
+      {
+        "number": "6",
+        "label": "Domains Covered"
+      },
+      {
+        "number": "100%",
+        "label": "Open Source"
+      }
+    ]
+  },
+
+  "gettingStartedSection": {
+    "title": "Getting Started",
+    "description": "We provide an LLM-based failure analysis tool (llm_as_judge) to automatically classify failure cases into different error categories based on trace analysis.",
+    "steps": [
+      {
+        "step": 1,
+        "title": "Clone the Repository",
+        "code": "git clone https://github.com/QuantaAlpha/VideoDR-Benchmark.git&&cd VideoDR-Benchmark&&cd llm_as_judge"
+      },
+      {
+        "step": 2,
+        "title": "Install Dependencies",
+        "code": "pip install -r requirements.txt"
+      },
+      {
+        "step": 3,
+        "title": "Configuration API",
+        "code": "echo -e LLM_BASE_URL=your_api_base_url\\nLLM_API_KEY=your_api_key > .env"
+      },
+      {
+        "step": 4,
+        "title": "Run the Tool",
+        "code": "python llm_as_judge/src/analyze_failure_types.py --excel_file llm_as_judge/data/Video-LLM.xlsx --trace_dir results/traces --models gpt52 gpt4o --max_workers 4"
+      }
+    ]
+  },
+
+  "externalLinks": {
+    "paper": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+    "github": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+    "datasets": "https://github.com/QuantaAlpha/VideoDR-Benchmark"
+  }
+}

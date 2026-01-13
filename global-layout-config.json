@@ -1,0 +1,154 @@
+{
+  "projectInfo": {
+    "name": "VideoDR-Benchmark",
+    "description": "VideoDR is the first open-domain video deep research benchmark. It evaluates multimodal large language models' (MLLLMs) ability to perform agentic video reasoning by extracting cross-frame visual anchors from videos, conducting interactive web retrieval, and performing multi-hop reasoning over joint video-web evidence to answer factoid questions that cannot be solved by video or web alone.",
+    "logo": "/img/qa-base.cd56c3b8.png",
+    "website": "https://quantaalpha.com/",
+    "github": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+    "paper": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+    "copyright": "© 2026 VideoDR-Benchmark. All rights reserved.",
+    "tagline": "Built with ❤️ for the AI research community"
+  },
+
+  "navigation": {
+    "brand": {
+      "name": "VideoDR-Benchmark",
+      "logo": "/img/qa-base.cd56c3b8.png",
+      "link": "/"
+    },
+    "menuItems": [
+      {
+        "name": "Home",
+        "icon": "fas fa-home",
+        "link": "/home",
+        "type": "internal"
+      },
+      {
+        "name": "LeaderBoard",
+        "icon": "fas fa-trophy",
+        "link": "/leaderboard",
+        "type": "internal"
+      },
+      {
+        "name": "GitHub",
+        "icon": "fab fa-github",
+        "link": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+        "type": "external"
+      }
+    ]
+  },
+
+  "footer": {
+    "sections": [
+      {
+        "title": "Project",
+        "type": "description",
+        "logo": "/img/qa-base.cd56c3b8.png",
+        "logoAlt": "VideoDR-Benchmark",
+        "description": "VideoDR is the first open-domain video deep research benchmark. It evaluates multimodal large language models' (MLLLMs) ability to perform agentic video reasoning by extracting cross-frame visual anchors from videos, conducting interactive web retrieval, and performing multi-hop reasoning over joint video-web evidence to answer factoid questions that cannot be solved by video or web alone."
+      },
+      {
+        "title": "Quick Links",
+        "type": "links",
+        "links": [
+          {
+            "name": "Home",
+            "link": "/home",
+            "type": "internal"
+          },
+          {
+            "name": "LeaderBoard",
+            "link": "/leaderboard",
+            "type": "internal"
+          }
+        ]
+      },
+      {
+        "title": "Resources",
+        "type": "links",
+        "links": [
+          {
+            "name": "GitHub",
+            "link": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+            "type": "external"
+          },
+          {
+            "name": "Paper",
+            "link": "https://arxiv.org/abs/2601.06943",
+            "type": "external"
+          },
+          {
+            "name": "Datasets",
+            "link": "https://huggingface.co/datasets/Yu2020/VideoDR",
+            "type": "external"
+          }
+        ]
+      },
+      {
+        "title": "Contact",
+        "type": "social",
+        "socialLinks": [
+          {
+            "name": "GitHub",
+            "icon": "fab fa-github",
+            "link": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+            "title": "GitHub"
+          },
+          {
+            "name": "Website",
+            "icon": "/img/qa-base.cd56c3b8.png",
+            "link": "https://quantaalpha.com/",
+            "title": "QuantaAlpha",
+            "isImage": true
+          }
+        ]
+      }
+    ],
+    "copyright": "© 2026 VideoDR-Benchmark. All rights reserved.",
+    "tagline": "Built with ❤️ for the AI research community"
+  },
+
+  "socialMedia": {
+    "github": {
+      "name": "GitHub",
+      "icon": "fab fa-github",
+      "url": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+      "color": "#333"
+    },
+    "website": {
+      "name": "Website",
+      "icon": "@/assets/logos/qa-base.png",
+      "url": "https://quantaalpha.com/",
+      "isLogo": true
+    }
+  },
+
+  "externalLinks": {
+    "paper": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+    "github": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+    "datasets": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
+    "website": "https://quantaalpha.com/",
+    "email": "mailto:quantaalpha.ai@gmail.com"
+  },
+
+  "uiConfig": {
+    "navbar": {
+      "height": "70px",
+      "background": "rgba(255, 255, 255, 0.95)",
+      "backdropFilter": "blur(20px)",
+      "borderBottom": "1px solid #e9ecef",
+      "boxShadow": "0 2px 8px rgba(0, 0, 0, 0.1)"
+    },
+    "footer": {
+      "background": "#f8f9fa",
+      "borderTop": "1px solid #e9ecef",
+      "textColor": "#333",
+      "linkColor": "#666",
+      "linkHoverColor": "#333"
+    },
+    "breakpoints": {
+      "mobile": "768px",
+      "tablet": "1024px"
+    }
+  }
+}
