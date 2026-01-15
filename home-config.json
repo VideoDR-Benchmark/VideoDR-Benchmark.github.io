@@ -7,7 +7,7 @@
   "heroSection": {
     "title": {
       "main": "VideoDR",
-      "subtitle": "Video Deep Research Benchmark"
+      "subtitle": "First Video Deep Research Benchmark"
     },
     "description": "A high-quality benchmark for systematically evaluating MLLMs' ability to perform video deep research in open-web settings, spanning six semantic domains with rigorous human annotation.",
     "buttons": [

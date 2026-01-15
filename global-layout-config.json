@@ -2,7 +2,7 @@
   "projectInfo": {
     "name": "VideoDR-Benchmark",
     "description": "VideoDR is the first open-domain video deep research benchmark. It evaluates multimodal large language models' (MLLLMs) ability to perform agentic video reasoning by extracting cross-frame visual anchors from videos, conducting interactive web retrieval, and performing multi-hop reasoning over joint video-web evidence to answer factoid questions that cannot be solved by video or web alone.",
-    "logo": "/img/qa-base.cd56c3b8.png",
+    "logo": "/images/qa-base.png",
     "website": "https://quantaalpha.com/",
     "github": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
     "paper": "https://github.com/QuantaAlpha/VideoDR-Benchmark",
@@ -13,7 +13,7 @@
   "navigation": {
     "brand": {
       "name": "VideoDR-Benchmark",
-      "logo": "/img/qa-base.cd56c3b8.png",
+      "logo": "/images/qa-base.png",
       "link": "/"
     },
     "menuItems": [
@@ -43,7 +43,7 @@
       {
         "title": "Project",
         "type": "description",
-        "logo": "/img/qa-base.cd56c3b8.png",
+        "logo": "/images/qa-base.png",
         "logoAlt": "VideoDR-Benchmark",
         "description": "VideoDR is the first open-domain video deep research benchmark. It evaluates multimodal large language models' (MLLLMs) ability to perform agentic video reasoning by extracting cross-frame visual anchors from videos, conducting interactive web retrieval, and performing multi-hop reasoning over joint video-web evidence to answer factoid questions that cannot be solved by video or web alone."
       },
@@ -96,7 +96,7 @@
           },
           {
             "name": "Website",
-            "icon": "/img/qa-base.cd56c3b8.png",
+            "icon": "/images/qa-base.png",
             "link": "https://quantaalpha.com/",
             "title": "QuantaAlpha",
             "isImage": true
