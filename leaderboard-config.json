@@ -130,6 +130,24 @@
       "SearchCount": 1.17,
       "TotalTime": 181.87,
       "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "Workflow",
+      "LLM": "GPT-5.2",
+      "ACC": 69.0,
+      "ThinkCount": 2.90,
+      "SearchCount": 2.94,
+      "TotalTime": 569.13,
+      "SiteUrl": "https://openai.com/research/gpt-4"
+    },
+    {
+      "Framework": "Agentic",
+      "LLM": "GPT-5.2",
+      "ACC": 69.0,
+      "ThinkCount": 3.06,
+      "SearchCount": 2.74,
+      "TotalTime": 1375.83,
+      "SiteUrl": "https://openai.com/research/gpt-4"
     }
   ],
   "filterOptions": {
@@ -171,7 +189,8 @@
     "InternVL3.5-14B": { "name": "InternVL3.5-14B", "logo": "internai", "type": "open-source" },
     "MiniCPM-V 4.5": { "name": "MiniCPM-V 4.5", "logo": "openbmb", "type": "open-source" },
     "Gemini-3-pro-preview": { "name": "Gemini-3-pro-preview", "logo": "gemini", "type": "closed-source" },
-    "GPT-4o": { "name": "GPT-4o", "logo": "gpt", "type": "closed-source" }
+    "GPT-4o": { "name": "GPT-4o", "logo": "gpt", "type": "closed-source" },
+    "GPT-5.2": { "name": "GPT-5.2", "logo": "gpt", "type": "closed-source" }
   },
   "faqItems": [],
   "submissionGuide": {
